@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".login.ForgotFrag"
+    android:background="@color/white">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:isScrollContainer="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your profile"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/black" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile_holder_icon_primary"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimary"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:clickable="true"
+                    android:id="@+id/addProfileFloating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:src="@drawable/add_photo_icon"
+                    android:focusable="true" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="@color/secondText"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gender_icon_primary"
+                    android:layout_gravity="center"/>
+
+                <Spinner
+                    android:id="@+id/genderSpinner"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:alpha="0.5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="@color/secondText"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar_icon_primary"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvDateOfBirth"
+                    android:layout_weight="11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/addDateOfBirth"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_icon_primary"
+                    android:layout_gravity="center"
+                    android:focusable="true" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:alpha="0.5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/secondText"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_icon_primary"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_weight="11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/addLocation"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_icon_primary"
+                    android:layout_gravity="top"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:alpha="0.5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/secondText"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:src="@drawable/description_icon_primary" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_weight="11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/addDescription"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_icon_primary"
+                    android:layout_gravity="top"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:alpha="0.5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Looking for:"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondText"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/secondText"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/addLookingFor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_icon_primary"
+                    android:layout_gravity="right"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvLookingFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimary"
+                android:alpha="0.5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Interested in:"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondText"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondText"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/addInterestedIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_icon_primary"
+                    android:layout_gravity="right"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tvInterestedIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:alpha="0.5"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/signin_button"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

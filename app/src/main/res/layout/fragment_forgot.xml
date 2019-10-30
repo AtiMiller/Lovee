@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".login.ForgotFrag"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:id="@+id/toolbar_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:navigationIcon="@drawable/back_arrow_icon_black" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+        android:id="@+id/logo_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/app_logo" />
+
+        <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOVEE"
+        android:fontFamily="@font/font1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Forgot Password"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"/>
+
+
+        <EditText
+            android:id="@+id/etForgotEmail"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="15dp"
+            android:drawableStart="@drawable/email_icon_primary"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/signin_button"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forgot_background" />
+
+
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Lovee</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_background_description">slpash screen background</string>
+    <string name="dating_background">dating background</string>
+    <string name="email">Email</string>
+    <string name="password" />
+    <string name="Password">Password</string>
+    <string name="okButton">ok</string>
+    <string name="cancelButton">cancel</string>
+    
+    <string-array name="choiceLookingFor">
+        <item>Friend</item>
+        <item>Soul Mate</item>
+        <item>Partner</item>
+        <item>Someone</item>
+        <item>Someone 2</item>
+
+    </string-array>
+
+    <string-array name="choiceInterestedIn">
+        <item>Reading</item>
+        <item>Traveling</item>
+        <item>Fishing</item>
+        <item>Crafts</item>
+        <item>Bird Watching</item>
+        <item>Collecting</item>
+        <item>Music</item>
+        <item>Gardening</item>
+        <item>Video Games</item>
+
+    </string-array>
+
+    <string-array name="monthList">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+</resources>

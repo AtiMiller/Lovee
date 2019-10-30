@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.DiscoverFrag">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_weight="5.5"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        android:focusable="true">-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivUserProfile"-->
+<!--            android:src="@drawable/app_login_splash_screen_background"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:scaleType="centerCrop" />-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:layout_weight="7"
+        android:id="@+id/card_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+        android:clipToPadding="false">
+    </com.yuyakaido.android.cardstackview.CardStackView>
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/name_view"-->
+<!--        android:layout_weight="1.5"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="vertical">-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tvUserName"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Name"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/secondText"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="20sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center_horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tvUserLocation"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="location"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@color/secondText"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="12sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tvUserAge"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@drawable/age_background"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:paddingLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:paddingRight="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="28"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="12sp" />&ndash;&gt;-->
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+<!--    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0dp">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="120dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/return_icon_blue"
+                app:backgroundTint="@color/white"
+                app:elevation="4dp"
+                app:maxImageSize="40dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="120dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/star_icon_yellow"
+                app:backgroundTint="@color/white"
+                app:elevation="4dp"
+                app:maxImageSize="35dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabDecline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/decline_icon_grey"
+                app:backgroundTint="@color/white"
+                app:elevation="4dp"
+                app:maxImageSize="35dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabHeart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/heart_icon_primary"
+                app:backgroundTint="@color/white"
+                app:elevation="4dp"
+                app:maxImageSize="35dp" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

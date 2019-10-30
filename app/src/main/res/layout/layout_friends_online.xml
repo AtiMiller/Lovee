@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile_holder_icon_primary" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/online_circle"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/userName_messenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"/>
+
+</LinearLayout>

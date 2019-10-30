@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Filter"
+        android:orderInCategory="100"
+        android:id="@+id/actionFilter"
+        android:icon="@drawable/filter_icon_black"
+        app:showAsAction="always"
+        />
+
+    <item android:title="SignOut"
+        android:orderInCategory="101"
+        android:id="@+id/actionSignOut"
+        android:icon="@drawable/sign_out_icon_black"
+        app:showAsAction="ifRoom"
+        />
+</menu>
